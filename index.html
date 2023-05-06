@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+  <div class="main">
+    <div class="rate-container">
+      <div class="logo-holder">
+        <div class="circle">
+          <img src="images/icon-star.svg" alt="">
+        </div>
+        <div class="rate-description">
+          <label>How did we do?</label>
+          <p>
+            Please let us know how we did with your support request.
+            All feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rate-btn-holder">
+          <button onclick="clickRate(1)">1</button>
+          <button onclick="clickRate(2)">2</button>
+          <button onclick="clickRate(3)">3</button>
+          <button onclick="clickRate(4)">4</button>
+          <button onclick="clickRate(5)">5</button>
+        </div>
+        <div class="submit-holder">
+          <button onclick="submit()">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+    <div class="message-container" id="message">
+    <div class="message-contents">
+      <div class="image-holder">
+        <img src="images/illustration-thank-you.svg">
+      </div>
+      <div class="selected">
+        <p id="number-rate"></p>
+      </div>
+      <div class="thank-message">
+        <label>Thank You</label>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don't hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/pia-angelique/">Pia Angelique Dee</a>.
+  </div>
+</body>
+</html>
